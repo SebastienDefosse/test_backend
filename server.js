@@ -17,7 +17,7 @@ const errorHandler = error => {
         throw error;
     }
     const address = server.address();
-    const bind = typeof address === 'string' ? 'pipe' + address : 'port' + port;
+    const bind = typeof address === 'string' ? 'pipe' + address : 'port ' + port;
     switch ( error.code ) {
         case 'EACCES':
             console.error(bind + ' augnentation de privilèges requis !');
@@ -38,7 +38,7 @@ server.on('listening', () => {
     const bind = typeof address === 'string' ? 'pipe' + address : 'port' + port;
     console.log('###########################');
     console.log('# Serveur initialisé      #');
-    console.log('# Ecoute sur ' + bind + ' #');
+    console.log('# Ecoute sur '+ bind +'   #');
     console.log('###########################');
 });
 server.listen(port);
