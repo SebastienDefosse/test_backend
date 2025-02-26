@@ -1,0 +1,17 @@
+{
+  "name": "test_backend",
+  "version": "1.0.0",
+  "description": "test de backend pour nouvelle fonctionnalité call sur API d'aircall",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sebastien.defosse@niji.fr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "promise": "^8.1.0",
+    "request": "^2.88.2"
+  }
+}
