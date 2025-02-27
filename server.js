@@ -11,7 +11,7 @@ const normalisePort = val => {
     }
     return false;
 };
-const port = normalisePort( process.env.PORT || '80' );
+const port = normalisePort( process.env.PORT || '443' );
 const errorHandler = error => {
     if ( error.syscall !== 'listen' ) {
         throw error;
