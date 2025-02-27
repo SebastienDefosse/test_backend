@@ -12,6 +12,6 @@ app.use((req, res, next) => {
 });
 app.use(bodyParser.json());
 
-app.use('/test_backend/calls', callsRoutes);
+app.use('/test_backend', callsRoutes);
 
 module.exports = app;
